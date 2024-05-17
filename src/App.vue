@@ -1,17 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="inner">
+    <FirstEvent />
+    <TabContainer />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FirstEvent from './components/event/FirstEvent';
+//import TabContainer from './components/TabContainer.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    FirstEvent,
+    //TabContainer,
+  },
+};
 </script>
 
 <style>
@@ -20,7 +24,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
